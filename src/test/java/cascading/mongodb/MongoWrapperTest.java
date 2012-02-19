@@ -24,7 +24,6 @@
 
 package cascading.mongodb;
 
-import com.mongodb.DB;
 import com.mongodb.DBAddress;
 import com.mongodb.Mongo;
 import org.junit.After;

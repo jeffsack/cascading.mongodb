@@ -2,11 +2,8 @@ package cascading.mongodb;
 
 import cascading.scheme.Scheme;
 import cascading.tap.Tap;
-import cascading.tuple.Fields;
 import cascading.tuple.Tuple;
 import cascading.tuple.TupleEntry;
-import com.mongodb.BasicDBObject;
-import com.mongodb.DB;
 import org.apache.hadoop.mapred.JobConf;
 import org.apache.hadoop.mapred.OutputCollector;
 import org.apache.hadoop.mapred.OutputFormat;

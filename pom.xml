@@ -1,0 +1,66 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>djktno</groupId>
+    <artifactId>cascading.mongodb</artifactId>
+    <version>0.0.49-SNAPSHOT</version>
+    <name>cascading.mongodb</name>
+    <scm>
+        <connection>scm:git:git://github.com/djktno/cascading.mongodb.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/djktno/cascading.mongodb.git</developerConnection>
+        <url>https://github.com/djktno/cascading.mongodb</url>
+    </scm>
+
+    <repositories>
+        <repository>
+            <id>conjars</id>
+            <url>http://conjars.org/repo</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-core</artifactId>
+            <version>0.20.2</version>
+        </dependency>
+        <!-- TODO: re-add this dependency once a cascading-core test artifact is published -->
+        <!--<dependency>-->
+            <!--<groupId>cascading</groupId>-->
+            <!--<artifactId>cascading-core</artifactId>-->
+            <!--<version>1.2.6</version>-->
+            <!--<classifier>test</classifier>-->
+            <!--<scope>test</scope>-->
+            <!--<exclusions>-->
+                <!--<exclusion>-->
+                    <!--<artifactId>janino</artifactId>-->
+                    <!--<groupId>org.codehaus.janino</groupId>-->
+                <!--</exclusion>-->
+            <!--</exclusions>-->
+        <!--</dependency>-->
+        <dependency>
+            <groupId>cascading</groupId>
+            <artifactId>cascading-core</artifactId>
+            <version>1.2.6</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>janino</artifactId>
+                    <groupId>org.codehaus.janino</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>2.7.3</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.16</version>
+        </dependency>
+    </dependencies>
+
+</project>

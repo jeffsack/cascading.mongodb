@@ -2,7 +2,6 @@ package cascading.mongodb;
 
 import cascading.CascadingTestCase;
 import cascading.tuple.Fields;
-import org.apache.hadoop.fs.Path;
 import org.junit.Assert;
 import org.junit.Test;
 
